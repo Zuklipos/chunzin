@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ночной город Чунцин</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.ibb.co/RpSgW4V5/99px-ru-wallpaper-369412-nochnoj-gorod-chuncin-chongqing-kitaj-v-vechernee.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 204, 0, 0.2);
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 204, 0, 0.5);
+        }
+        
+        .card:active {
+            transform: scale(0.98) translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #ffcc00;
+            margin-top: 0;
+            border-bottom: 1px solid #ffcc00;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0));
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            color: #ffcc00;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .header p {
+                font-size: 1.1em;
+            }
+            .container {
+                padding: 20px 10px;
+                gap: 20px;
+            }
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>柳旺世界</h1>
+        <p>Добро пожаловать в захватывающий мир ночного Чунцина - города, где древние традиции встречаются с футуристическими технологиями, создавая неповторимую атмосферу.</p>
+    </div>
+    
+    <div class="container">
+        <!-- Карточка 1 -->
+        <div class="card" data-page="city_lights.html">
+            <img src="https://images.unsplash.com/photo-1578973615934-8d9cdb0c0c67?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Городские огни">
+            <h2>Городские огни</h2>
+            <p>Чунцин известен своими потрясающими ночными видами и неоновыми огнями, которые создают уникальную атмосферу киберпанка. Особенно впечатляет вид с обзорных площадок.</p>
+        </div>
+        
+        <!-- Карточка 2 -->
+        <div class="card" data-page="cuisine.html">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Местная кухня">
+            <h2>Местная кухня</h2>
+            <p>Попробуйте знаменитый чунцинский горячий горшок (хуого) - острое блюдо с историей в 2000 лет, которое покорило весь мир своей уникальной пряностью.</p>
+        </div>
+        
+        <!-- Карточка 3 -->
+        <div class="card" data-page="architecture.html">
+            <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Архитектура">
+            <h2>Уникальная архитектура</h2>
+            <p>Город славится своими небоскребами, построенными на холмах, сложной системой эстакад и знаменитым монорельсом, проходящим сквозь здания.</p>
+        </div>
+        
+        <!-- Карточка 4 -->
+        <div class="card" data-page="culture.html">
+            <img src="https://images.unsplash.com/photo-1527909740628-f2a110ce0f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Культура">
+            <h2>Богатая культура</h2>
+            <p>Чунцин имеет 3000-летнюю историю, множество культурных памятников и является важным центром традиционной сычуаньской культуры.</p>
+        </div>
+        
+        <!-- Карточка 5 -->
+        <div class="card" data-page="transport.html">
+            <img src="https://images.unsplash.com/photo-1553826059-7a090c4bd362?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Транспорт">
+            <h2>Городской транспорт</h2>
+            <p>Уникальная транспортная система включает монорельс, проходящий через здания, многоуровневые развязки и канатную дорогу через реку Янцзы.</p>
+        </div>
+        
+        <!-- Карточка 6 -->
+        <div class="card" data-page="nature.html">
+            <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Природа">
+            <h2>Окрестности</h2>
+            <p>Вокруг города расположены живописные горы Ушань, три ущелья Янцзы и многочисленные природные заповедники с уникальной флорой и фауной.</p>
+        </div>
+    </div>
+
+    <script>
+        // Обработка кликов по карточкам
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Анимация нажатия
+                this.style.transform = 'scale(0.98)';
+                this.style.opacity = '0.9';
+                
+                // Получаем URL страницы из атрибута data-page
+                const pageUrl = this.getAttribute('data-page');
+                
+                // Переход после небольшой задержки для анимации
+                setTimeout(() => {
+                    if(pageUrl) {
+                        window.location.href = pageUrl;
+                    }
+                }, 150);
+            });
+            
+            // Возвращаем исходное состояние после анимации
+            card.addEventListener('mouseup', function() {
+                this.style.transform = 'translateY(-10px)';
+                this.style.opacity = '1';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>
